@@ -7,7 +7,12 @@ export default function HomeScreen({navigation}) {
          <Text>Home Screen</Text>
       <Button
         title="Go to User"
-        onPress={() => navigation.navigate('User')}
+        onPress={() => {
+          navigation.navigate('User', {
+            userId:  Math.floor(Math.random() * 100),
+            userName: 'Jamus Lim'
+          });
+        }}
       />
       </View>
     );
