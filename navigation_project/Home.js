@@ -14,6 +14,10 @@ export default function HomeScreen({navigation}) {
           });
         }}
       />
+      <Button
+        title="Toggle Drawer"
+        onPress={() => navigation.toggleDrawer()}
+      />
       </View>
     );
 }
